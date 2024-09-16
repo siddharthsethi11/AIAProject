@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/siddharthsethi11/AIAProject
   gitUsername: siddharthsethi11
   gitBranch: main
+services:
+- serviceName: project.aia.integrations:test
+  packages:
+  - name: AIAProject
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.1018
