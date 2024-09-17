@@ -31,6 +31,10 @@ services:
   packages:
   - name: AIAProject
     version: "1.0"
+- serviceName: project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:getContact
+  packages:
+  - name: AIAProject
+    version: "1.0"
 configurationVariables:
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionManagerSettings.blockingTimeout
   : "1000"
