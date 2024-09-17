@@ -27,49 +27,98 @@ services:
   packages:
   - name: AIAProject
     version: "1.0"
+- serviceName: project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:ContactDB
+  packages:
+  - name: AIAProject
+    version: "1.0"
 configurationVariables:
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionManagerSettings.blockingTimeout
+  : "1000"
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
   : "1000"
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
-  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.transactionType
+  : NO_TRANSACTION
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
   : NO_TRANSACTION
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
-  : "1000"
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
   : loginTimeout=60;
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
   : ""
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "true"
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
-  : MSSQL
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.password
+  : "{AES}n7jITagvtM9fq28rT5kuMg=="
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.otherProperties
+  : loginTimeout=60;
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
   : sql_server
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionManagerSettings.maximumPoolSize
+  : "10"
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : Progress® DataDirect®
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
-  : "{AES}n7jITagvtM9fq28rT5kuMg=="
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
-  : "10"
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
-  : Salesforce_Sync
+  artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionEnabled: "false"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.driverType
+  : Progress® DataDirect®
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : admin
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.serverName
+  : host.docker.internal
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.databaseName
+  : Salesforce_Sync
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "true"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}n7jITagvtM9fq28rT5kuMg=="
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : Salesforce_Sync
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionManagerSettings.expireTimeout
+  : "1000"
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.networkProtocol
   : ""
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
   : "0"
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
-  : "10"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.keyStore
+  : ""
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.trustStore
+  : ""
   artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled: "false"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
   ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
   : "1433"
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
-  : "1"
-  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
-  : "0"
+  ? artConnection.AIAProject.project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.ContactDB.connectionSettings.user
+  : admin
