@@ -141,7 +141,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">sury</value>
-    <value name="lastModifiedDate">1726563038172</value>
+    <value name="lastModifiedDate">1726564109074</value>
     <value name="displayName">test</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -157,10 +157,10 @@
         <value name="name">Database</value>
         <value name="providerName">WmJDBCAdapter</value>
         <record name="operation" javaclass="com.wm.util.Values">
-          <value name="operationName">dbaction</value>
-          <null name="description"/>
+          <value name="operationName">getContact</value>
           <value name="isCustom">true</value>
           <value name="operationType">actions</value>
+          <value name="connectionType">sagcloud</value>
           <value name="projectName">project.aia</value>
         </record>
         <value name="appType">predefined</value>
@@ -190,12 +190,12 @@
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <record name="connection" javaclass="com.wm.util.Values">
-          <value name="connectionName">Database_1</value>
-          <value name="connectionType">webMethods Adapter for JDBC ExtendedConnection</value>
+          <value name="connectionName">ContactDB</value>
+          <value name="connectionType">sagcloud</value>
           <null name="description"/>
         </record>
-        <value name="connectionNSName">project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1</value>
-        <value name="connectionType">webMethods Adapter for JDBC ExtendedConnection</value>
+        <value name="connectionNSName">project.aia.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:ContactDB</value>
+        <value name="connectionType">sagcloud</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
         <number name="ui_step_index" type="Long">1</number>
         <value name="nodePathNew">0</value>
@@ -208,10 +208,10 @@
       <record name="/1" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
-        <number name="ui_step_index" type="Long">3</number>
-        <value name="nodePathNew">2</value>
-        <number name="nodeIndex" type="Long">2</number>
-        <number name="lineNumberForDebug" type="Long">3</number>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
@@ -222,11 +222,11 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <value name="nodePathForDebug">2</value>
-        <Boolean name="hasBreakPoint">true</Boolean>
+        <value name="nodePathForDebug">1</value>
       </record>
       <null name="/1/0"/>
       <null name="/1/1"/>
+      <null name="/1/2"/>
       <record name="/2" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">IF</value>
@@ -243,7 +243,7 @@
         <value name="nodePathNew">3</value>
         <number name="nodeIndex" type="Long">3</number>
         <number name="lineNumberForDebug" type="Long">4</number>
-        <value name="nodePathForDebug">3</value>
+        <value name="nodePathForDebug">2</value>
       </record>
       <record name="/2/0" javaclass="com.wm.util.Values">
         <value name="name">IF</value>
@@ -251,7 +251,7 @@
         <value name="nodePathNew">3.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">4</number>
-        <value name="nodePathForDebug">3.0</value>
+        <value name="nodePathForDebug">2.0</value>
       </record>
       <record name="/2/0/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
@@ -270,7 +270,7 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <value name="nodePathForDebug">3.0.0</value>
+        <value name="nodePathForDebug">2.0.0</value>
       </record>
       <record name="/2/0/0/0" javaclass="com.wm.util.Values">
       </record>
@@ -288,10 +288,12 @@
       <record name="/2/0/1" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">EXIT</value>
+        <value name="nodePathForDebug">2.0.1</value>
       </record>
       <record name="/3" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">EXIT</value>
+        <value name="nodePathForDebug">3</value>
       </record>
     </record>
   </record>
