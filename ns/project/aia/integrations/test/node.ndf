@@ -141,7 +141,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">sury</value>
-    <value name="lastModifiedDate">1726564761012</value>
+    <value name="lastModifiedDate">1726564840610</value>
     <value name="displayName">test</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -253,6 +253,10 @@
       </record>
       <record name="/1/0/0/3" javaclass="com.wm.util.Values">
       </record>
+      <record name="/1/0/1" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">EXIT</value>
+      </record>
       <record name="/1/1" javaclass="com.wm.util.Values">
         <value name="name">ELSE</value>
         <value name="itemType">CONTROLS</value>
@@ -292,6 +296,10 @@
       <record name="/1/1/0/6" javaclass="com.wm.util.Values">
       </record>
       <record name="/1/1/0/7" javaclass="com.wm.util.Values">
+      </record>
+      <record name="/1/1/1" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">EXIT</value>
       </record>
     </record>
   </record>
