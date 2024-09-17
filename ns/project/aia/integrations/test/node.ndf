@@ -141,7 +141,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">sury</value>
-    <value name="lastModifiedDate">1726562271122</value>
+    <value name="lastModifiedDate">1726563038172</value>
     <value name="displayName">test</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -203,15 +203,9 @@
         <number name="lineNumberForDebug" type="Long">1</number>
         <Boolean name="xmlMapsetSupported">true</Boolean>
         <null name="outputMapSet"/>
+        <value name="nodePathForDebug">0</value>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
-        <value name="itemType">CONTROLS</value>
-        <value name="name">EXIT</value>
-        <value name="nodePathNew">1</value>
-        <number name="nodeIndex" type="Long">1</number>
-        <number name="lineNumberForDebug" type="Long">2</number>
-      </record>
-      <record name="/2" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">3</number>
@@ -228,10 +222,12 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">2</value>
+        <Boolean name="hasBreakPoint">true</Boolean>
       </record>
-      <null name="/2/0"/>
-      <null name="/2/1"/>
-      <record name="/3" javaclass="com.wm.util.Values">
+      <null name="/1/0"/>
+      <null name="/1/1"/>
+      <record name="/2" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">IF</value>
         <record name="config" javaclass="com.wm.util.Values">
@@ -247,15 +243,17 @@
         <value name="nodePathNew">3</value>
         <number name="nodeIndex" type="Long">3</number>
         <number name="lineNumberForDebug" type="Long">4</number>
+        <value name="nodePathForDebug">3</value>
       </record>
-      <record name="/3/0" javaclass="com.wm.util.Values">
+      <record name="/2/0" javaclass="com.wm.util.Values">
         <value name="name">IF</value>
         <value name="itemType">CONTROLS</value>
         <value name="nodePathNew">3.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">4</number>
+        <value name="nodePathForDebug">3.0</value>
       </record>
-      <record name="/3/0/0" javaclass="com.wm.util.Values">
+      <record name="/2/0/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">5</number>
@@ -272,19 +270,28 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">3.0.0</value>
       </record>
-      <record name="/3/0/0/0" javaclass="com.wm.util.Values">
+      <record name="/2/0/0/0" javaclass="com.wm.util.Values">
       </record>
-      <record name="/3/0/0/1" javaclass="com.wm.util.Values">
+      <record name="/2/0/0/1" javaclass="com.wm.util.Values">
       </record>
-      <record name="/3/0/0/2" javaclass="com.wm.util.Values">
+      <record name="/2/0/0/2" javaclass="com.wm.util.Values">
       </record>
-      <record name="/3/0/0/3" javaclass="com.wm.util.Values">
+      <record name="/2/0/0/3" javaclass="com.wm.util.Values">
       </record>
-      <record name="/3/0/0/4" javaclass="com.wm.util.Values">
+      <record name="/2/0/0/4" javaclass="com.wm.util.Values">
       </record>
-      <null name="/3/0/0/5"/>
-      <record name="/3/0/0/6" javaclass="com.wm.util.Values">
+      <null name="/2/0/0/5"/>
+      <record name="/2/0/0/6" javaclass="com.wm.util.Values">
+      </record>
+      <record name="/2/0/1" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">EXIT</value>
+      </record>
+      <record name="/3" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">EXIT</value>
       </record>
     </record>
   </record>
