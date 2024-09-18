@@ -403,7 +403,7 @@
 
   <!-- nodes -->
 
-<SEQUENCE NAME="((%/getContactOutput/results/FirstName_1%))" EXIT-ON="FAILURE">
+<SEQUENCE NAME="((%/getContactOutput/count%>=1))" EXIT-ON="FAILURE">
   <COMMENT></COMMENT>
 
   <!-- nodes -->

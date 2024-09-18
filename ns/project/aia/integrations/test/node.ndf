@@ -141,7 +141,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">sury</value>
-    <value name="lastModifiedDate">1726565045061</value>
+    <value name="lastModifiedDate">1726672604270</value>
     <value name="displayName">test</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -221,6 +221,7 @@
         <value name="nodePathNew">1</value>
         <number name="nodeIndex" type="Long">1</number>
         <number name="lineNumberForDebug" type="Long">2</number>
+        <value name="nodePathForDebug">1</value>
       </record>
       <record name="/1/0" javaclass="com.wm.util.Values">
         <value name="name">IF</value>
@@ -228,6 +229,7 @@
         <value name="nodePathNew">1.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">2</number>
+        <value name="nodePathForDebug">1.0</value>
       </record>
       <record name="/1/0/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
@@ -246,6 +248,7 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">1.0.0</value>
       </record>
       <null name="/1/0/0/0"/>
       <null name="/1/0/0/1"/>
@@ -256,6 +259,7 @@
       <record name="/1/0/1" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">EXIT</value>
+        <value name="nodePathForDebug">1.0.1</value>
       </record>
       <record name="/1/1" javaclass="com.wm.util.Values">
         <value name="name">ELSE</value>
@@ -263,6 +267,7 @@
         <value name="nodePathNew">2.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">4</number>
+        <value name="nodePathForDebug">1.1</value>
       </record>
       <record name="/1/1/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
@@ -281,6 +286,7 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">1.1.0</value>
       </record>
       <null name="/1/1/0/0"/>
       <record name="/1/1/0/1" javaclass="com.wm.util.Values">
@@ -300,6 +306,7 @@
       <record name="/1/1/1" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">EXIT</value>
+        <value name="nodePathForDebug">1.1.1</value>
       </record>
     </record>
   </record>
