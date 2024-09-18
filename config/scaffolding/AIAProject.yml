@@ -10,11 +10,6 @@ packages:
 - name: WmJDBCAdapter
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
-- name: contacts
-  gitServerName: Siddharth_Git
-  gitUrl: https://github.com/siddharthsethi11
-  gitUsername: siddharthsethi11
-  gitBranch: master
 services:
 - serviceName: project.aia.integrations:test
   packages:
